@@ -37,6 +37,10 @@ VALUES ("Sumsang b50","hape keren dari merek sumsang",4000000,100,1),
 4. SELECT id , `name` , email 
 FROM users
 
+SELECT * FROM items AS i WHERE i.price > 1000000
+
+SELECT * FROM items AS i WHERE i.name LIKE '%uniklo%'
+
 SELECT i.`name` , i.`description` , i.`price` , i.`stock` , i.`category_id` , c.`name`
 FROM items AS i JOIN categories AS c ON i.`category_id` = c.`id`
 
